@@ -5,8 +5,8 @@ loop do # Check to see if user still wants to use the Calculator.
   response = gets.chomp.to_s.capitalize
   if response == 'N'
     break
-  elsif response != 'N' || response != 'Y'
-    puts 'Please Enter a N or No or Y for Yes'
+  else response != 'N' && response != 'Y'
+    puts 'Please Enter a "N" or No or "Y" for Yes'
     next
   end
 
