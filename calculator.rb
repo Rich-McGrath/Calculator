@@ -24,7 +24,6 @@ loop do # Check to see if user still wants to use the Calculator.
 
   case operator
   when '1' # Addition
-    # Mutating the Caller on all case statments
     answer = number1 + number2
     operator = ' + '
   when '2' # Subtracrtion
