@@ -2,10 +2,14 @@
 
 loop do # Check to see if user still wants to use the Calculator.
   puts 'Would you like to use Calculator?'
-  response = gets.chomp.capitalize
+  response = gets.chomp.to_s.capitalize
   if response == 'N'
     break
+  elsif response != 'N' || response != 'Y'
+    puts 'Please Enter a N or No or Y for Yes'
+    next
   end
+
   # User is asked to enter in two numnbers.
   puts 'Please enter a number:'
   number1 = gets.chomp.to_i
