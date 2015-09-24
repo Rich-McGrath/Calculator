@@ -18,12 +18,18 @@ loop do
   operator = gets.chomp
   case operator
   when '1' # Addition
+    # Mutating the Caller on all case statments
     answer = number1 + number2
+    operator = ' + '
   when '2' # Subtracrtion
     answer = number1 - number2
+    operator = ' - '
   when '3' # Multiplcation
     answer = number1 * number2
+    operator = ' * '
   when '4' # Division
     answer = number1 / number2
+    operator = ' / '
   end
+  puts "The answer for #{number1} #{operator} #{number2} is: #{answer}"
 end
